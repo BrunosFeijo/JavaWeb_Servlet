@@ -1,5 +1,5 @@
 <%@ page pageEncoding="UTF-8" %>
-<%@ page import= "java.sql.Connection, br.com.codandosimples.infra.ConnectionFactory, br.com.codandosimples.dao.DespesaDAO, java.util.*, br.com.codandosimples.model.*"
+<%@ page import= "java.sql.Connection, br.com.codandosimples.infra.ConnectionFactory, br.com.codandosimples.dao.DespesaDAO, java.util.*, br.com.codandosimples.model.*" %>
 <!DOCTYPE html>
 
 <html lang="pt"
