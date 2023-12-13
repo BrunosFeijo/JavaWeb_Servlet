@@ -20,6 +20,6 @@ public class PrimeiraServlet extends HttpServlet {
         writer.println("</body>");
         writer.println("</html>");
 
-        
+
     }
 }
