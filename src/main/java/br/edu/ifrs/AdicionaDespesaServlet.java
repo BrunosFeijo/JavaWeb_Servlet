@@ -19,13 +19,13 @@ import java.time.format.DateTimeFormatter;
 @WebServlet("/adicionaDespesa")
 public class AdicionaDespesaServlet extends HttpServlet {
     @Override
-    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String descricao = request.getParameter("descricao");
         String dataStr = request.getParameter("data");
         String valorStr = request.getParameter("valor");
         String categoriaStr = request.getParameter("categoria");
 
-        LocalDate data = LocalDate.parse(dataStr, DateTimeFormatter.ofPattern("dd/mm/yyyy"));
+        LocalDate data = LocalDate.parse(dataStr, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         double valor = Double.parseDouble(valorStr);
         Categoria categoria = Categoria.valueOf(categoriaStr);
 
