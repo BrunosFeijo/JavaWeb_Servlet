@@ -1,5 +1,7 @@
 package br.edu.ifrs;
 
+import br.com.ifrs.infra.ConnectionFactory;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,7 +21,6 @@ public class PrimeiraServlet extends HttpServlet {
         writer.println("<h1>Primeira Página da nossa aplicação Web! Usando Servlet</h1>");
         writer.println("</body>");
         writer.println("</html>");
-
 
     }
 }
