@@ -24,6 +24,29 @@
     </style>
 </head>
 <body>
-    
+    <table>
+    <tr>
+        <th>Descrição</th>
+        <th>Data</th>
+        <th>Valor</th>
+        <th>Categoria</th>
+    </tr>
+    <%
+       Connection connection = ConnectionFactory.getConnection();
+       DespesaDAO dao = new DespesaDAO(connection);
+       List<Despesa> despesas = dao.findAll();
+
+       for(Despesa despesa: despesas){
+     %>
+     <tr>
+        <tr><%= despesa.getDescricao() %></tr>
+        <tr><%= despesa.getData() %></tr>
+        <tr><%= despesa.getValor() %></tr>
+        <tr><%= despesa.getCategoria() %></tr>
+      </tr>
+      <%
+      }
+      %>
+     </table>
 </body>
 </html>
