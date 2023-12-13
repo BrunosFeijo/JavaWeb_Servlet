@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 @WebServlet(urlPatterns = {"/xpto", "/teste", "terceiraServlet"})
 public class PrimeiraServlet extends HttpServlet {
     @Override
-    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter writer = response.getWriter();
         writer.println("<html>");
         writer.println("<body>");
