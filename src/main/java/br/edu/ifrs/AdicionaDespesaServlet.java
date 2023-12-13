@@ -36,6 +36,6 @@ public class AdicionaDespesaServlet extends HttpServlet {
 
         PrintWriter out = response.getWriter();
         out.println("<html><body>Despesa adicionada com sucesso</body></html>");
-    
+
     }
 }
